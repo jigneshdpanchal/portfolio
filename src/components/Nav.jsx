@@ -47,7 +47,7 @@ const Nav = () => {
     <nav className='bg-gradient-to-r shadow-lg from-violet-500 to-fuchsia-500 navbar'>
       <div className='h-10vh menu flex top-0 justify-between z-50 text-white py-4'>
         <div className='flex items-center flex-1'>
-          <span className='text-[40px] font-bold'><a className='px-5' href='/'>JP</a></span>
+          <span className='text-[40px] font-bold'><a className='px-5' href='https://jigneshdpanchal.github.io/portfolio/'>JP</a></span>
         </div>
         <div className='lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden'>
           <div className='flex-10'>
