@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family: Outfit, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom right, #d946ef, #8b5cf6);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom right, #8b5cf6, #d946ef);
+  }
+
+  h1{
+    font-size: 42px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .menu {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media only screen and (max-width:414px) {
+    .sb-l{
+      display: none;
+    }
+    .sb-r{
+      display: none;
+    }
+    .about{
+      width: 100%;
+      margin-left: 0;
+  }
+  .about-container {
+      margin-left: 0;
+      padding: 20px;
+  }
+  .about-container h1{
+    text-align: center;
+  }
+  .about-container h3{
+    text-align: center;
+  }
+  .about-container p{
+    padding:0 20px;
+  }
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    padding: 0 20px;
+  }
+  .mnav{
+    top:60px;
+  }
+  }
+  .top{
+    padding: 5px;
+    color: #fff;
+    background-image: linear-gradient(to right, #8b5cf6, #d946ef);
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }

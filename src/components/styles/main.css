@@ -1,0 +1,400 @@
+.main{
+    z-index: 5;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #8b5cf6, #d946ef);
+    padding: 10px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.section-title {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.greendot {
+    width: 10px;
+    height: 10px;
+    background-image: linear-gradient(to right, #8b5cf6, #d946ef);
+    border-radius: 50px;
+    margin: 0 5px;
+}
+.left-line {
+    width: 35%;
+    border: 1px solid #d946ef;
+    float: left;
+}
+.right-line {
+    width: 35%;
+    border: 1px solid #d946ef;
+    float: right;
+}
+
+.edu-timeline {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+.edu-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    -webkit-animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.edu-container:nth-child(1){
+    animation-delay: 0s;
+}
+.edu-container:nth-child(2){
+    animation-delay: 1s;
+}
+.edu-container:nth-child(3){
+    animation-delay: 2s;
+}
+.edu-container:nth-child(4){
+    animation-delay: 3s;
+}
+.left-container {
+    left: 0;
+}
+.right-container {
+    left: 50%;
+}
+.edu-text-box {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #8b5cf6;
+    box-shadow: 0 0 5px 0 #d946ef;
+    text-align: center;
+}
+.edu-text-box h2{
+    font-size: 20px;
+}
+small {
+    font-weight: bold;
+}
+.edu-icon {
+    width: 40px;
+    padding: 5px;
+    height: auto;
+    border: 1px solid #8b5cf6;    
+    border-radius: 50px;
+    color: #8b5cf6;
+    background-color: #fff;
+}
+.edu-container svg {
+    position: absolute;
+    width: 40px;
+    right: -20px;
+    top: 25px;
+    z-index: 10;
+}
+
+.right-container svg {
+    left: -20px;
+}
+
+.edu-timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #8b5cf6, #d946ef);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    border-radius: 50px;
+    animation: moveline 6s linear forwards;
+    -webkit-animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height:0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@-webkit-keyframes moveline {
+    0%{
+        height:0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #8b5cf6;
+    right: 35px;
+}
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #d946ef;
+    left: 35px;
+}
+
+@media only screen and (max-width: 360px) {
+    .edu-timeline{
+        margin: 50px auto;
+    }
+    .edu-timeline::after{
+        left: 31px;
+    }
+    .edu-container{
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+    .edu-text-box {
+        padding: 10px;
+        border-radius: 6px;
+        text-align: left;
+    }
+    .edu-container svg {
+        left: 10px;
+        top: 25px;
+    }
+    .right-container{
+        left: 0;
+    }
+    .left-container-arrow, .right-container-arrow {
+        border-right: 10px solid #d946ef;
+        border-left: 0;
+        left: 50px;
+        top: 30px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .edu-timeline{
+        margin: 50px auto;
+    }
+    .edu-timeline::after{
+        left: 31px;
+    }
+    .edu-container{
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+    .edu-text-box {
+        padding: 10px;
+        border-radius: 6px;
+        text-align: left;
+    }
+    .edu-container svg {
+        left: 10px;
+        top: 25px;
+    }
+    .right-container{
+        left: 0;
+    }
+    .left-container-arrow, .right-container-arrow {
+        border-right: 10px solid #8b5cf6;
+        border-left: 0;
+        left: 50px;
+        top: 30px;
+    }
+}
+
+.skills-section .skill-items{
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 20px;
+}
+.skills-container{
+    width: 100%;
+    padding: 0 20px;
+    margin: 30px auto;
+}
+
+.skill-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+.skill-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.skill-info p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #15295f;
+    opacity: 1;
+    -webkit-animation: showText 0.5s 1s linear forwards;
+    animation: showText 0.5s 1s linear forwards;
+}
+.progress-line {
+    margin-top: 7px;
+    height: 10px;
+    width: 100%;
+    background-color: #c2c2c2;
+    border-radius: 50px;
+    position: relative;
+}
+.progress-line span {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    background-image: linear-gradient(to right, #8b5cf6, #d946ef);
+    transition: 1s all;
+}
+.progress-line span.animate {
+    animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+    -webkit-animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@-webkit-keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+}
+@-webkit-keyframes animate {
+    100% {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+}
+
+/* .expandeble {
+    display: flex;
+    justify-content: center;
+} */
+.expandeble-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (max-width: 360px) {
+    .skills-section .skill-items{
+        margin: 20px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .skills-section{
+        padding-top: 10px;
+    }
+    .skills-container{
+        margin: 15px auto;
+    }
+    .skill-item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .skills-section .skill-items{
+        margin: 20px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .skill-item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
