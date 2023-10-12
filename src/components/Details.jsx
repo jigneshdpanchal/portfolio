@@ -13,7 +13,7 @@ const Details = () => {
         <p className='font-semibold text-left xl:text-right lg:text-right md:text-right bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Mobile:</p>
         <p className='lg:col-span-2 xl:col-span-2 md:col-span-2 col-span-3 lg:text-left md:text-left xl:text-left text-left'><a className='hover:text-fuchsia-500' href='tel:+919664840299'>+91 966 4840 299</a></p>
         <div className='visible col-span-3 xl:hidden lg:hidden md:hidden text-center mb-2'>
-        <a href='https://drive.google.com/uc?id=11yxFIIH3g9_4Iky4CawSk0dpdcmMSJiM&export=download'><button className='px-5 py-2 mt-4 border-[1px] rounded-md bg-white shadow-sm cursor-pointer hover:shadow-xl'>Download CV</button></a>
+        <a href='https://drive.google.com/uc?id=17-FwgY7bxALgvcr0H07AW1HLeGYg4a-B&export=download'><button className='px-5 py-2 mt-4 border-[1px] rounded-md bg-white shadow-sm cursor-pointer hover:shadow-xl'>Download CV</button></a>
         </div>
     </div>
     </div>

@@ -13,12 +13,14 @@ function WorkExperience() {
   const [isExpanded3, setExpanded3] = useState(false);
   const [isExpanded4, setExpanded4] = useState(false);
   const [isExpanded5, setExpanded5] = useState(false);
+  const [isExpanded6, setExpanded6] = useState(false);
 
   const { getCollapseProps: getCollapseProps1, getToggleProps: getToggleProps1 } = useCollapse({ isExpanded: isExpanded1 });
   const { getCollapseProps: getCollapseProps2, getToggleProps: getToggleProps2 } = useCollapse({ isExpanded: isExpanded2 });
   const { getCollapseProps: getCollapseProps3, getToggleProps: getToggleProps3 } = useCollapse({ isExpanded: isExpanded3 });
   const { getCollapseProps: getCollapseProps4, getToggleProps: getToggleProps4 } = useCollapse({ isExpanded: isExpanded4 });
   const { getCollapseProps: getCollapseProps5, getToggleProps: getToggleProps5 } = useCollapse({ isExpanded: isExpanded5 });
+  const { getCollapseProps: getCollapseProps6, getToggleProps: getToggleProps6 } = useCollapse({ isExpanded: isExpanded6 });
   return (
     <section data-aos="fade-left" data-aos-anchor-placement="top-bottom" className='skills-section'>
       <div className='skills-container'>
@@ -124,7 +126,7 @@ function WorkExperience() {
           <div className="experience-text-box">
             <div className='flex justify-between items-center'>
               <h2 className='font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Octexa System</h2>
-              <small>2008 - 2013</small>
+              <small>2011 - 2013</small>
             </div>
             <div className='flex justify-between items-center'>
               <h3>Designation:</h3>
@@ -139,6 +141,28 @@ function WorkExperience() {
             </span>
             <p className='text-gray-400 text-justify m-2' {...getCollapseProps5()}>I have been worked on our compani'sI have been actively involved in enhancing our company's website by focusing on improving keyword rankings and identifying opportunities to enhance its overall performance. During my time at the company, I've been engaged in various small-scale projects, including activities such as Article Submissions, Social Bookmarking, Blog Creation and Submission, Web Directory Submission, Local Business Listing, etc.</p>
             <span className='experience-left-container-arrow'></span>
+          </div>
+        </div>
+        <div className="experience-container experience-right-container">
+          <FaBriefcase className='experience-icon' />
+          <div className="experience-text-box">
+            <div className='flex justify-between items-center'>
+              <h2 className='font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Cybernation Infotech Inc</h2>
+              <small>2008 - 2011</small>
+            </div>
+            <div className='flex justify-between items-center'>
+              <h3>Designation:</h3>
+              <h3>System Administrator</h3>
+            </div>
+            <span className='button'
+              {...getToggleProps6({
+                onClick: () => setExpanded6((prevExpanded6) => !prevExpanded6),
+              })}
+            >
+              {isExpanded6 ? 'Read Less' : 'Read More'}
+            </span>
+            <p className='text-gray-400 text-justify m-2' {...getCollapseProps6()}>Cybernation Infotech, a distinguished player in the Medical Transcription industry, provided me with the opportunity to serve as a Hardware & Networking Engineer. In this role, my responsibilities encompassed the management of the company's extensive network infrastructure and the maintenance of its computer systems.<br/><br/>My career path took a curious turn when I got into the world of Search Engine Optimization SEO while working at Cybernation Infotech. My career changed significantly during this period of change, and I am grateful of the foundation I built while working for this prestigious company.</p>
+            <span className='experience-right-container-arrow'></span>
           </div>
         </div>
       </div>

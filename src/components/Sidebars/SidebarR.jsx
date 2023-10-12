@@ -26,7 +26,7 @@ const SidebarR = () => {
           </div>
         </div>
         <div className='flex justify-center content-center'>
-            <a href='https://drive.google.com/uc?id=11yxFIIH3g9_4Iky4CawSk0dpdcmMSJiM&export=download'><button className='px-10 py-2 mt-4 border-[1px] rounded-md bg-white shadow-sm cursor-pointer hover:shadow-xl'>Resume</button></a>
+            <a href='https://drive.google.com/uc?id=17-FwgY7bxALgvcr0H07AW1HLeGYg4a-B&export=download'><button className='px-10 py-2 mt-4 border-[1px] rounded-md bg-white shadow-sm cursor-pointer hover:shadow-xl'>Resume</button></a>
           </div>
     </div>
   )
