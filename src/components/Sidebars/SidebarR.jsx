@@ -5,7 +5,7 @@ const SidebarR = () => {
   return (
     <div className='fixed'>
         <div className='flex justify-center content-center'>
-        <img src={ProfilePic} className='w-10/12 object-cover'/>
+        <img src={ProfilePic} alt='Jignesh Panchal' className='w-10/12 object-cover'/>
         </div>
         <div className='h-[1px] bg-gradient-to-r from-pink-500 to-violet-500'></div>
         <div className='lg:hidden md:hidden sm:block text-[18px] leading-8 px-5 py-5'>
@@ -26,7 +26,7 @@ const SidebarR = () => {
           </div>
         </div>
         <div className='flex justify-center content-center'>
-            <a href='https://drive.google.com/uc?id=17-FwgY7bxALgvcr0H07AW1HLeGYg4a-B&export=download'><button className='px-10 py-2 mt-4 border-[1px] rounded-md bg-white shadow-sm cursor-pointer hover:shadow-xl'>Resume</button></a>
+            <a href='https://drive.google.com/uc?id=17-FwgY7bxALgvcr0H07AW1HLeGYg4a-B&export=download' aria-label='Download CV'><button className='px-10 py-2 mt-4 border-[1px] rounded-md bg-white shadow-sm cursor-pointer hover:shadow-xl'>Resume</button></a>
           </div>
     </div>
   )

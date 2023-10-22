@@ -8,26 +8,32 @@ const Nav = () => {
     {
       id: 1,
       name: "HOME",
+      description: "This is the home page"
     },
     {
       id: 2,
       name: "ABOUT",
+      description: "Know more about Jignesh Panchal"
     },
     {
       id: 3,
       name: "EDUCATION",
+      description: "Jignesh Panchal's Educational History"
     },
     {
       id: 4,
       name: "SKILLS",
+      description: "Learn more about Jignesh Panchal's Skillsets"
     },
     {
       id: 5,
       name: "EXPERIENCE",
+      description: "Jignesh Panchal's Professional Work Experience and Career History"
     },
     {
       id: 6,
       name: "CONTACT",
+      description: "Contact Jignesh Panchal"
     }
   ];
   const [click, setClick] = useState(false);
@@ -38,7 +44,7 @@ const Nav = () => {
     <ul className='text-center md:text-sm text-xl'>
       {menu.map((item, index) => (
         <li key={index} className='my-4 py-4 border-b border-slate-800'>
-        <Link spy={true} smooth={true} to={item.name.toLocaleLowerCase()} duration={500}>{item.name}</Link></li>
+        <Link spy={true} aria-label={item.description} smooth={true} to={item.name.toLocaleLowerCase()} duration={500}>{item.name}</Link></li>
       ))}      
     </ul>
   </div>
@@ -54,7 +60,7 @@ const Nav = () => {
           <ul className='flex gap-8 mr-16 md:text-base text-[18px]'>
           {menu.map((item,index) => (
             <li key={index} className='cursor-pointer'>
-        <Link spy={true} smooth={true} to={item.name.toLocaleLowerCase()} duration={500}>{item.name}</Link></li>
+        <Link spy={true} aria-label={item.description} smooth={true} to={item.name.toLocaleLowerCase()} duration={500}>{item.name}</Link></li>
       ))}
           </ul>
           </div>
