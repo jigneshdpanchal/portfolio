@@ -5,7 +5,7 @@ const SidebarR = () => {
   return (
     <div className='fixed'>
         <div className='flex justify-center content-center'>
-        <img src={ProfilePic} alt='Jignesh Panchal' className='w-10/12 object-cover'/>
+        <img src={ProfilePic} alt='Jignesh Panchal Profile Pic' width={200} height={200} className='object-cover' />
         </div>
         <div className='h-[1px] bg-gradient-to-r from-pink-500 to-violet-500'></div>
         <div className='lg:hidden md:hidden sm:block text-[18px] leading-8 px-5 py-5'>
