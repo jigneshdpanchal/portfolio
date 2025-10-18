@@ -4,21 +4,22 @@ A modern, responsive portfolio website built with Vite, Tailwind CSS, and AOS An
 
 ## 🚀 Features
 
-Fast Development: Powered by Vite, ensuring a fast and smooth development experience.
-Responsive Design: Built using Tailwind CSS for a mobile-first, fully responsive layout.
-Smooth Animations: Implemented AOS (Animate On Scroll) for engaging animations when scrolling through the page.
-Minimalist Layout: Clean, simple, and effective design for a professional online presence.
-Customizable: Easy to modify and update with your personal details, skills, and projects.
+- Fast Development: Powered by Vite, ensuring a fast and smooth development experience.
+- Responsive Design: Built using Tailwind CSS for a mobile-first, fully responsive layout.
+- Smooth Animations: Implemented AOS (Animate On Scroll) for engaging animations when scrolling through the page.
+- Minimalist Layout: Clean, simple, and effective design for a professional online presence.
+- Customizable: Easy to modify and update with your personal details, skills, and projects.
 
 ## 🛠️ Technologies Used
 
-Vite - Fast and optimized development environment.
-Tailwind CSS - Utility-first CSS framework for responsive design.
-AOS - Animate On Scroll library for animations.
-HTML - Semantic and accessible markup.
-JavaScript - Interactive functionality and logic.
+- Vite - Fast and optimized development environment.
+- Tailwind CSS - Utility-first CSS framework for responsive design.
+- AOS - Animate On Scroll library for animations.
+- HTML - Semantic and accessible markup.
+- JavaScript - Interactive functionality and logic.
 
 ## 🔧 Installation
+
 ### Prerequisites
 
 Ensure you have the following installed:
@@ -45,11 +46,11 @@ To make this portfolio your own, modify the following files:
 
 Contributions are welcome! If you'd like to improve this project or fix a bug, feel free to:
 
-Fork the repository
-Create a new branch (git checkout -b feature-name)
-Commit your changes (git commit -am 'Add new feature')
-Push to the branch (git push origin feature-name)
-Open a pull request
+- Fork the repository
+- Create a new branch (git checkout -b feature-name)
+- Commit your changes (git commit -am 'Add new feature')
+- Push to the branch (git push origin feature-name)
+- Open a pull request
 
 ## 📫 Contact
 
